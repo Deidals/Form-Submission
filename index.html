@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+
+  <main>
+    <form action="">
+      <h1>Contact Us</h1>
+      
+      <label for="firstName" id="firstNameLabel">First Name <span class="mandatory">*</span></label>
+      <input type="text" name="firstName" class="nonRadio" id="firstNameInput" aria-labelledby="firstNameLabel" aria-describedby="firstNameHelp" autocomplete="given-name" aria-required="true" required>
+      <p id="firstNameHelp" class="sr-only">This field is required.</p>
+      
+      <label for="lastName" id="lastNameLabel">Last Name <span class="mandatory">*</span></label>
+      <input type="text" name="lastName" class="nonRadio" id="lastNameInput" aria-labelledby="lastNameLabel" aria-describedby="lastNameHelp" autocomplete="family-name" aria-required="true" required>
+      <p id="lastNameHelp" class="sr-only">This field is required.</p>
+      
+      <label for="email" id="emailLabel">Email Address <span class="mandatory">*</span></label>
+      <input type="email" name="email" id="emailInput" aria-labelledby="emailLabel" aria-describedby="emailHelp" autocomplete="email" aria-required="true" required>
+      <p id="emailHelp" class="sr-only">Please enter a valid email address.</p>
+      
+      <fieldset aria-required="true">
+        <legend>Query Type <span class="mandatory">*</span></legend>
+        <div class="queryDiv" id="generalEnquiryDiv">
+          <input type="radio" name="queryType" id="generalEnquiryInput" aria-labelledby="generalEnquiryLabel" required>
+        <label for="generalEnquiryInput" id="generalEnquiryLabel">General Enquiry</label>
+        </div>
+        <div class="queryDiv" id="supportRequestDiv">
+          <input type="radio" name="queryType" id="supportRequestInput" aria-labelledby="supportRequestLabel" required>
+          <label for="supportRequestInput" id="supportRequestLabel">Support Request</label>
+        </div>
+      </fieldset>
+      <p id="queryHelp" class="sr-only"> This field is required.
+      </p>
+    
+      <label for="message" id="messageLabel">Message <span class="mandatory">*</span></label>
+      <textarea name="message" class="nonRadio" id="messageTextarea" aria-labelledby="messageLabel" aria-describedby="messageHelp" aria-required="true" required></textarea>
+      <p id="messageHelp" class="sr-only">This field is required.</p>
+    
+      <div id="consentP">
+        <input type="checkbox" name="checkbox" class="nonRadio" id="consentCheckbox" aria-required="true" required>
+        <label for="consentCheckbox">I consent to being contacted by the team <span class="mandatory">*</span></label>
+      </div>
+      <p id="consentHelp" class="sr-only"> To submit this form, please content to be contacted</p>
+      <button type="submit">Submit</button>
+       <!-- Message Sent!
+          Thanks for completing the form. We'll be in touch soon! -->
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+        Coded by <a href="#">Alqorni Trikandalas Ginting</a>.
+      </div>
+    </form>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
+
+
