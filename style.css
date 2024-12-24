@@ -116,8 +116,10 @@ button {
     text-align: center;
     border-radius: 10px;
     height: 60px;
-    border: none;  /* Optionally remove any default border */
-    outline: none; /* Remove the outline if needed */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
 
 button:hover,
@@ -193,7 +195,7 @@ article span{
     }
 
     body{
-        margin: 8% 0;
+        height: 100vh;
         padding: 0;
     }
     form{
