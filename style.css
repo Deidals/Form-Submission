@@ -28,7 +28,9 @@ body{
     font-size: 16px;
     font-family: "Karla";
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 form{
@@ -128,10 +130,45 @@ button:hover{
 
 #consentCheckbox, #generalEnquiryInput, #supportRequestInput{
     accent-color: hsl(169, 82%, 27%);
+    transform: scale(1.5);
 }
 .sr-only {
     color: hsl(0, 66%, 54%);
     visibility: hidden;
+}
+
+article{
+    color: white;
+    background-color: hsl(187, 24%, 22%);
+    width: 460px;
+    height: 112px;
+    border-radius: 10px;
+    padding: 20px 25px;
+    line-height: 2;
+    font-size: 16px;
+    display: inline-block;
+    visibility: hidden;
+    position: fixed;
+    top: 2%;
+}
+
+article strong{
+    font-size: 20px;
+}
+
+article div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding-left: 5px;
+}
+article div svg{
+    
+}
+article span{
+    display: block;
+    text-align: center;
 }
 
 @media screen and (min-width: 1000px) {
