@@ -122,7 +122,7 @@ button{
     height: 60px;
 }
 
-button:hover{
+button:hover, button:focus{
     background-color: hsl(187, 24%, 22%);
 }
 
@@ -142,11 +142,11 @@ button:hover{
 article{
     color: white;
     background-color: hsl(187, 24%, 22%);
-    width: 460px;
+    width: 300px;
     height: 112px;
     border-radius: 10px;
     padding: 20px 25px;
-    line-height: 2;
+    line-height: 1.6;
     font-size: 16px;
     display: inline-block;
     visibility: hidden;
@@ -170,10 +170,19 @@ article div svg{
 }
 article span{
     display: block;
-    text-align: center;
+    text-align: left;
 }
 
 @media screen and (min-width: 1000px) {
+    article{
+        width: 460px;
+        height: 112px;
+    }
+
+    article span{
+        text-align: center;
+    }
+
     body{
         margin: 8% 0;
         padding: 0;

@@ -73,6 +73,10 @@ form.addEventListener(`submit`, (event) => {
     if (firstNameInput.value.trim() !== `` && lastNameInput.value.trim() !== `` && pattern.test(emailInput.value) && messageInput.value.trim() !== `` && consentInput.checked){
         document.querySelector(`article`).style.visibility = `visible`;
 
+        setTimeout(() => {
+            document.querySelector(`article`).style.visibility = `hidden`
+        }, 5000);
+
         document.querySelector(`form`).reset();
     };
     
