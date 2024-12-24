@@ -21,18 +21,15 @@
     color: hsl(228, 45%, 44%);
 }
 
-main{
-    height: auto;
-    margin-top: 10%;
-}
+
 body{
-    height: 100vh;
-    margin: 20px 10px;
+    height: 150vh;
     background-color: hsl(148, 38%, 91%);
     font-size: 16px;
     font-family: "Karla";
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 form{
