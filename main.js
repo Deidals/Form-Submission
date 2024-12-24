@@ -71,16 +71,14 @@ form.addEventListener(`submit`, (event) => {
     };
 
     if (firstNameInput.value.trim() !== `` && lastNameInput.value.trim() !== `` && pattern.test(emailInput.value) && messageInput.value.trim() !== `` && consentInput.checked){
-        document.querySelector(`article`).style.visibility = `visible`;
+        document.querySelector(`article`).classList.add(`visible`);
 
         setTimeout(() => {
-            document.querySelector(`article`).style.visibility = `hidden`
+            document.querySelector(`article`).classList.remove(`visible`);
         }, 5000);
 
         document.querySelector(`form`).reset();
     };
-    
-
 })
 
 firstNameInput.addEventListener(`click`, () => {

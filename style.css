@@ -110,18 +110,22 @@ legend{
     gap: 20px;
 }
 
-button{
-    all: unset;
+button {
     color: white;
     background-color: hsl(169, 82%, 27%);
     text-align: center;
     border-radius: 10px;
     height: 60px;
+    border: none;  /* Optionally remove any default border */
+    outline: none; /* Remove the outline if needed */
 }
 
-button:hover, button:focus{
+button:hover,
+button:focus,
+button:active {
     background-color: hsl(187, 24%, 22%);
 }
+
 
 #consentHelp{
     margin: 10px 0;
@@ -149,6 +153,14 @@ article{
     visibility: hidden;
     position: fixed;
     top: 2%;
+    opacity: 0;
+    transition: opacity 1s ease, visibility 0s 1s; /* Fade in/out */
+}
+
+article.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease, visibility 0s 0s; /* Immediate visibility when faded in */
 }
 
 article strong{
